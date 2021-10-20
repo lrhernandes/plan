@@ -3,3 +3,7 @@
   overflow-y: scroll;
   padding: 30px;
 }
+
+svg.arrow-bottom--md {
+  transform: rotate(-45deg);
+}

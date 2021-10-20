@@ -1,5 +1,6 @@
 import "./styles.css";
 import logo from "../../assets/logo.png";
+import { IoArrowDown } from "react-icons/io5";
 
 function SideBar() {
   const menu = [
@@ -29,11 +30,18 @@ function SideBar() {
       <img className="sidebar__logo" alt="Plan logo" src={logo} />
       <div className="sidebar__list">
         {menu.map((item) => (
-          <li key={item.id} className="sidebar__list__item">
+          <li key={item.id}>
             <span>0{item.id}.</span>
             <h1>/{item.title}</h1>
           </li>
         ))}
+      </div>
+      <div className="sidebar__footer">
+        <li>
+          <span>;&#41;</span>
+          <h1>Que tal inovar com a gente?</h1>
+        </li>
+        <IoArrowDown className="arrow-bottom--md" />
       </div>
     </div>
   );
