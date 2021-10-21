@@ -20,15 +20,15 @@ body {
 }
 ::-webkit-scrollbar-track,
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: #464646;
 }
 ::-webkit-scrollbar-thumb,
 ::-webkit-scrollbar-thumb {
-  background: rgb(201, 201, 201);
+  background: rgb(142, 142, 142);
 }
 ::-webkit-scrollbar-thumb:hover,
 ::-webkit-scrollbar-thumb:hover {
-  background: rgb(145, 145, 145);
+  background: rgb(103, 103, 103);
 }
 
 .subtitle--md {
