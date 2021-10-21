@@ -1,9 +1,9 @@
 import "./styles.css";
-import Card from "./WhatWeDoCard";
+import Cards from "./Cards";
 function WhatWeDo() {
   return (
     <div className="what-we-do">
-      <div>
+      <div className="what-we-do__body">
         <div className="heading">
           <span>02.</span>
           <p className="title--md">/O que fazemos</p>
@@ -21,9 +21,7 @@ function WhatWeDo() {
           a, tempor lacinia nisi.
         </p>
       </div>
-      <div>
-        <Card />
-      </div>
+      <Cards />
     </div>
   );
 }

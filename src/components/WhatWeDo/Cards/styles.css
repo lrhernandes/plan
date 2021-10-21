@@ -1,0 +1,15 @@
+.what-we-do .cards {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin-right: -15px;
+  /* width: 60%; */
+  /* border: 2px solid blue; */
+}
+
+svg.arrow-bottom--sm {
+  font-size: 14px;
+  margin-top: 5px;
+  transform: rotate(-45deg);
+  color: #939598;
+}

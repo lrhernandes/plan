@@ -1,6 +1,14 @@
 .what-we-do {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  gap: 5%;
+  margin-top: 8%;
+}
+
+.what-we-do__body {
+  /* border: 2px solid red; */
+  padding-left: 2%;
 }
 
 .heading {
@@ -40,20 +48,4 @@
   font-weight: 300;
   font-size: 14px;
   color: white;
-}
-
-.subtitle--md {
-  color: #939598;
-  font-size: 20px;
-  margin: 10px 0px;
-}
-
-.subtitle--sm {
-  color: #939598;
-  font-size: 16px;
-  margin: 10px 0px;
-}
-.text-base {
-  font-size: 14px;
-  line-height: 24px;
 }
