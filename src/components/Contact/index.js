@@ -1,4 +1,5 @@
 import "./styles.css";
+import Cards from "./Cards";
 function Contact() {
   return (
     <div className="contact section">
@@ -46,7 +47,9 @@ function Contact() {
           </label>
         </form>
       </div>
-      <div className="contact__cards"></div>
+      <div className="contact__cards">
+        <Cards />
+      </div>
     </div>
   );
 }

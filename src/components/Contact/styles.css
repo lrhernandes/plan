@@ -1,3 +1,9 @@
+.contact {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
 .contact__form input,
 .contact__form textarea {
   outline: none;

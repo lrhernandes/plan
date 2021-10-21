@@ -73,7 +73,17 @@ body {
   color: #939598;
   text-decoration: none;
 }
+.base-link:hover {
+  transition: all 0.5s;
+  cursor: pointer;
+  color: white;
+}
+
+.base-link:hover svg {
+  transform: rotate(0deg);
+}
 
 .base-link svg {
+  transition: all 0.5s;
   color: white !important;
 }
