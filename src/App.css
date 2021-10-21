@@ -31,9 +31,32 @@ body {
   background: rgb(103, 103, 103);
 }
 
-.subtitle--md {
+.text-base {
+  font-size: 13px;
+  line-height: 22px;
+}
+.text-base strong {
+  font-weight: 600;
+}
+
+.text--sm {
+  font-size: 12px;
+  line-height: 20px;
+}
+.text--sm strong {
+  font-weight: 600;
+}
+
+.subtitle--bg {
   color: #939598;
   font-size: 20px;
+  margin: 10px 0px;
+}
+
+.subtitle--md {
+  color: #939598;
+  font-size: 17px;
+  font-weight: 500;
   margin: 10px 0px;
 }
 
@@ -49,4 +72,8 @@ body {
   line-height: 11px;
   color: #939598;
   text-decoration: none;
+}
+
+.base-link svg {
+  color: white !important;
 }

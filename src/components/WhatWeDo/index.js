@@ -9,7 +9,7 @@ function WhatWeDo() {
           <p className="title--md">/O que fazemos</p>
           <p className="title--bg">/Games</p>
         </div>
-        <p className="subtitle--md">Desenvolvimento de games digitais.</p>
+        <p className="subtitle--bg">Desenvolvimento de games digitais.</p>
         <p className="subtitle--sm">
           Empresa especialista em desenvolvimento games digitais e gamificação.
         </p>

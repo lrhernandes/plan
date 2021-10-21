@@ -1,11 +1,11 @@
 /** SIDEBAR WRAPPER */
 .sidebar {
   width: 12%;
-  min-width: 210px;
+  min-width: 190px;
   height: 100vh;
   display: flex;
   flex-direction: column;
-  padding: 30px 0px;
+  padding: 20px 0px;
   justify-content: space-between;
   box-sizing: border-box;
   align-items: center;
@@ -17,13 +17,13 @@
 .sidebar__list,
 .sidebar__footer {
   width: 100%;
-  padding: 0px 30px;
+  padding: 0px 20px;
   box-sizing: border-box;
 }
 
 /** FOOTER */
 .sidebar__footer {
-  padding-top: 30px;
+  padding-top: 20px;
   position: relative;
   border-top: 1px solid #3e3e3e;
 }

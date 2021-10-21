@@ -1,0 +1,10 @@
+.plan-news .header {
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  gap: 20px;
+}
+.plan-news .base-link {
+  margin-bottom: 10px;
+  line-height: 10px;
+}
