@@ -8,6 +8,8 @@
 .home .section {
   border: 2px solid red;
   height: 100%;
+  padding-top: 8%;
+  box-sizing: border-box;
 }
 
 .home .section + .section {
