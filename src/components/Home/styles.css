@@ -5,6 +5,15 @@
   padding: 30px;
 }
 
+.home .section {
+  border: 2px solid red;
+  height: 100%;
+}
+
+.home .section + .section {
+  margin-top: 8%;
+}
+
 svg.arrow-bottom--md {
   transform: rotate(-45deg);
 }

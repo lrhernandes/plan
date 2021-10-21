@@ -2,7 +2,7 @@ import "./styles.css";
 import Cards from "./Cards";
 function WhatWeDo() {
   return (
-    <div className="what-we-do">
+    <div className="what-we-do section">
       <div className="what-we-do__body">
         <div className="heading">
           <span>02.</span>
