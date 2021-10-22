@@ -9,6 +9,10 @@
   max-width: 130px;
 }
 
+.contact .text-base {
+  margin-top: 20px;
+}
+
 .contact .cards .card .base-link {
   font-size: 13px;
 }
