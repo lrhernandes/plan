@@ -35,12 +35,14 @@ function SideBar() {
       <div
         className={showMenu ? "active sidebar__list" : "disable sidebar__list"}
       >
-        {menu.map((item) => (
-          <li key={item.id}>
-            <span>0{item.id}.</span>
-            <h1>/{item.title}</h1>
-          </li>
-        ))}
+        <div>
+          {menu.map((item) => (
+            <li key={item.id}>
+              <span>0{item.id}.</span>
+              <h1>/{item.title}</h1>
+            </li>
+          ))}
+        </div>
         <div className="sidebar__footer">
           <li>
             <span>;&#41;</span>

@@ -23,9 +23,17 @@
   transition: height 0.6s;
 }
 
+.sidebar__list {
+  overflow-x: hidden;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px;
+  justify-content: space-between;
+}
+
 /** FOOTER */
 .sidebar__footer {
-  margin-top: 5vh;
   padding: 20px 0px;
 }
 .sidebar__footer::before {
@@ -141,12 +149,12 @@
     border-top: 1px solid #3e3e3e;
     width: 100%;
     z-index: 1000;
+    margin: 0px;
     padding-top: 60px;
     top: 130px;
     background-color: #1e1e1e;
     height: calc(100vh - 130px);
     position: absolute;
-    overflow: hidden;
   }
 
   .sidebar__list li {
@@ -162,7 +170,7 @@
     bottom: 0px;
   }
   .sidebar__list.disable {
-    display: none;
+    display: none !important;
     height: 0px;
   }
 }
