@@ -1,6 +1,7 @@
 import "./styles.css";
 import logo from "../../assets/logo.png";
 import { IoArrowDown } from "react-icons/io5";
+import { GiHamburgerMenu } from "react-icons/gi";
 
 function SideBar() {
   const menu = [
@@ -42,6 +43,9 @@ function SideBar() {
           <h1>Que tal inovar com a gente?</h1>
         </li>
         <IoArrowDown className="arrow-bottom--md" />
+      </div>
+      <div className="sidebar__hamburguer">
+        <GiHamburgerMenu />
       </div>
     </div>
   );

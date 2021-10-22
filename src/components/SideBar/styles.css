@@ -71,3 +71,46 @@
   font-weight: 400;
   font-size: 13px;
 }
+
+.sidebar__hamburguer {
+  display: none;
+  color: #1e1e1e;
+  padding: 10px;
+  margin-right: 20px;
+  font-size: 20px;
+  line-height: 17px;
+  border-radius: 50%;
+  cursor: pointer;
+  background: #939598;
+}
+.sidebar__hamburguer:hover svg {
+  transform: rotate(90deg);
+  transition: all 0.5s;
+}
+
+@media screen and (max-width: 768px) {
+  .sidebar {
+    width: 100vw;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-sizing: border-box;
+    /* align-items: center; */
+    border: 0px;
+    border-bottom: 1px solid #3e3e3e;
+  }
+  .sidebar__list {
+    border: 2px solid red;
+    display: none;
+  }
+  .sidebar__footer {
+    display: none;
+  }
+  .sidebar__logo {
+    width: 180px;
+  }
+  .sidebar__hamburguer {
+    display: block;
+  }
+}

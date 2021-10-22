@@ -13,6 +13,25 @@
   overflow: hidden;
 }
 
+@media screen and (max-width: 768px) {
+  .plan-news .card {
+    margin-top: 20px;
+  }
+  .plan-news .cards {
+    grid-template-columns: repeat(1, auto);
+  }
+  .card__image .fold {
+    border: 16vw solid;
+    border-color: rgb(30, 30, 30) rgb(30, 30, 30) transparent transparent;
+  }
+}
+@media screen and (min-width: 769px) {
+  .card__image .fold {
+    border: 30px solid;
+    border-color: rgb(30, 30, 30) rgb(30, 30, 30) transparent transparent;
+  }
+}
+
 .plan-news .cards .card .card__image {
   position: relative;
 }
@@ -27,7 +46,6 @@
   right: 0;
   width: 0;
   height: 0;
-  border: 30px solid;
   border-color: rgb(30, 30, 30) rgb(30, 30, 30) transparent transparent;
 }
 

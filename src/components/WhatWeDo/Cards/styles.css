@@ -1,8 +1,39 @@
 .what-we-do .cards {
-  display: flex;
-  flex-direction: row;
+  display: grid;
   gap: 20px;
+  grid-template-columns: repeat(4, auto);
   height: max-content;
+}
+@media screen and (max-width: 980px) {
+  .what-we-do .cards {
+    grid-template-columns: repeat(2, auto);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .what-we-do .cards .card__image {
+    width: 100%;
+    min-height: 200px;
+    height: 100%;
+  }
+
+  .what-we-do .cards .card__image img {
+    width: 100%;
+    min-height: 200px;
+    height: 100%;
+  }
+}
+@media screen and (max-width: 370px) {
+  .what-we-do .cards {
+    grid-template-columns: repeat(1, auto);
+  }
+  .what-we-do .cards .card__image {
+    min-height: 300px;
+  }
+
+  .what-we-do .cards .card__image img {
+    min-height: 300px;
+  }
 }
 
 svg.arrow-bottom--sm {
@@ -15,15 +46,18 @@ svg.arrow-bottom--sm {
 .what-we-do .cards .card {
   display: flex;
   flex-direction: column;
-  width: 25%;
+  position: relative;
   height: max-content;
 }
 
 .what-we-do .cards .card__image {
-  height: 160px;
-  width: 160px;
-  background-repeat: no-repeat;
+  height: 10vw;
   position: relative;
+}
+
+.what-we-do .cards .card__image img {
+  position: relative;
+  height: 10vw;
 }
 
 .what-we-do .cards .card__image svg {

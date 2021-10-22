@@ -5,6 +5,12 @@
   padding: 3%;
 }
 
+@media screen and (max-width: 768px) {
+  .home {
+    width: auto;
+  }
+}
+
 .home .section {
   height: 100%;
 }

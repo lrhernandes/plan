@@ -37,10 +37,8 @@ function Cards() {
     <div className="cards">
       {cards.map((card, index) => (
         <div className="card" key={index}>
-          <div
-            className="card__image"
-            style={{ backgroundImage: `url(${card.img})` }}
-          >
+          <div className="card__image">
+            {card.img && <img src={card.img} alt={card.alt} />}
             {card.icon}
           </div>
           <p

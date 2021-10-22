@@ -4,6 +4,15 @@
   gap: 8%;
 }
 
+@media screen and (max-width: 768px) {
+  .contact {
+    flex-direction: column;
+  }
+  .contact__form {
+    margin-bottom: 30px;
+  }
+}
+
 .contact__form {
   display: flex;
   flex-direction: column;
