@@ -12,10 +12,6 @@
   }
 }
 
-.home .section {
-  height: 100%;
-}
-
 .section + .section {
   padding-top: 19vh;
 }
