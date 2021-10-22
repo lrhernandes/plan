@@ -5,10 +5,11 @@
   height: 100vh;
   display: flex;
   flex-direction: column;
-  padding: 20px 0px;
+  padding: 20px;
   justify-content: space-between;
   box-sizing: border-box;
   align-items: center;
+  position: relative;
   border-right: 1px solid #3e3e3e;
 }
 
@@ -17,15 +18,28 @@
 .sidebar__list,
 .sidebar__footer {
   width: 100%;
-  padding: 0px 20px;
+  /* padding: 0px 20px; */
   box-sizing: border-box;
+  left: 0;
+  transition: height 0.6s;
 }
 
 /** FOOTER */
 .sidebar__footer {
-  padding-top: 20px;
-  position: relative;
+  margin-top: 5vh;
+  padding: 20px 0px;
+  /* position: relative; */
+}
+.sidebar__footer::before {
   border-top: 1px solid #3e3e3e;
+  content: "";
+  width: 100%;
+  position: absolute;
+  margin-left: 0px;
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  left: 0px;
+  float: left;
 }
 .sidebar__footer li h1 {
   margin-top: 17px !important;
@@ -53,13 +67,18 @@
   justify-items: center;
   justify-content: center;
   margin: 0px;
+  cursor: pointer;
   padding: 0px;
+}
+.sidebar li:hover span {
+  color: #131313;
 }
 .sidebar li span {
   position: absolute;
   color: #292929;
   font-weight: 700;
   font-size: 54px;
+  transition: all 0.5s;
   z-index: -1;
 }
 .sidebar li h1 {
@@ -83,12 +102,27 @@
   cursor: pointer;
   background: #939598;
 }
+.sidebar button {
+  border: none;
+  display: none;
+  background: none;
+}
 .sidebar__hamburguer:hover svg {
   transform: rotate(90deg);
   transition: all 0.5s;
 }
 
+@media screen and(min-width: 768px) {
+  .sidebar__list,
+  .sidebar__footer {
+    display: block !important;
+  }
+}
+
 @media screen and (max-width: 768px) {
+  .sidebar button {
+    display: block;
+  }
   .sidebar {
     width: 100vw;
     height: 200px;
@@ -96,21 +130,40 @@
     flex-direction: row;
     justify-content: space-between;
     box-sizing: border-box;
-    /* align-items: center; */
     border: 0px;
     border-bottom: 1px solid #3e3e3e;
-  }
-  .sidebar__list {
-    border: 2px solid red;
-    display: none;
-  }
-  .sidebar__footer {
-    display: none;
   }
   .sidebar__logo {
     width: 180px;
   }
   .sidebar__hamburguer {
     display: block;
+  }
+  .sidebar__list {
+    border-top: 1px solid #3e3e3e;
+    width: 100%;
+    z-index: 1000;
+    padding-top: 60px;
+    top: 110px;
+    background-color: #1e1e1e;
+    height: calc(100vh - 110px);
+    position: absolute;
+  }
+
+  .sidebar__list li {
+    padding-left: 20px;
+  }
+  .sidebar__footer li {
+    padding-top: 20px;
+  }
+  .sidebar__footer {
+    width: 100%;
+    padding: 0px;
+    border: 0px;
+    bottom: 0px;
+  }
+  .sidebar__list.disable {
+    display: none;
+    height: 0px;
   }
 }

@@ -15,14 +15,26 @@
 
 .contact .cards .card .icons-wrapper {
   color: #1e1e1e;
-  /* font-size: 25px; */
+}
+@media screen and (max-width: 400px) {
+  .contact .cards {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(1, auto);
+  }
+}
+@media screen and (max-width: 1072) {
+  .contact .cards {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(2, auto);
+  }
 }
 
 .contact .cards .card .icons-wrapper svg {
   background-color: #939598;
   padding: 5px;
   margin: 5px;
-  /* size: 50px; */
   border-radius: 50%;
 }
 

@@ -1,6 +1,7 @@
 import "./styles.css";
 import logo from "../../assets/logo.png";
-import { IoArrowDown } from "react-icons/io5";
+import { useState } from "react";
+import { IoArrowDown, IoCloseOutline } from "react-icons/io5";
 import { GiHamburgerMenu } from "react-icons/gi";
 
 function SideBar() {
@@ -26,27 +27,38 @@ function SideBar() {
       title: "Contato",
     },
   ];
+  const [showMenu, setShowMenu] = useState(true);
+
   return (
     <div className="sidebar">
       <img className="sidebar__logo" alt="Plan logo" src={logo} />
-      <div className="sidebar__list">
+      <div
+        className={showMenu ? "active sidebar__list" : "disable sidebar__list"}
+      >
         {menu.map((item) => (
           <li key={item.id}>
             <span>0{item.id}.</span>
             <h1>/{item.title}</h1>
           </li>
         ))}
+        <div className="sidebar__footer">
+          <li>
+            <span>;&#41;</span>
+            <h1>Que tal inovar com a gente?</h1>
+          </li>
+          <IoArrowDown className="arrow-bottom--md" />
+        </div>
       </div>
-      <div className="sidebar__footer">
-        <li>
-          <span>;&#41;</span>
-          <h1>Que tal inovar com a gente?</h1>
-        </li>
-        <IoArrowDown className="arrow-bottom--md" />
-      </div>
-      <div className="sidebar__hamburguer">
-        <GiHamburgerMenu />
-      </div>
+      <button
+        onClick={() => {
+          setShowMenu(!showMenu);
+        }}
+      >
+        <div className="sidebar__hamburguer">
+          {!showMenu && <GiHamburgerMenu />}
+          {showMenu && <IoCloseOutline />}
+        </div>
+      </button>
     </div>
   );
 }
