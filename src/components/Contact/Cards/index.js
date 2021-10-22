@@ -1,5 +1,11 @@
 import "./styles.css";
-import { IoArrowDown, IoLocationSharp } from "react-icons/io5";
+import {
+  IoArrowDown,
+  IoLocationSharp,
+  IoLogoFacebook,
+  IoLogoInstagram,
+  IoLogoYoutube,
+} from "react-icons/io5";
 import planMarcketing from "../../../assets/plan.png";
 import planLogo from "../../../assets/logo.png";
 import fullUp from "../../../assets/fullup.png";
@@ -12,6 +18,11 @@ function Cards() {
           Fique sempre por dentro de todas as novidades da Plan XP e de todas
           empresas do Grupo Plan Marketing.
         </p>
+        <div className="icons-wrapper">
+          <IoLogoFacebook size={25} />
+          <IoLogoInstagram size={25} />
+          <IoLogoYoutube size={25} />
+        </div>
       </div>
       <div className="card">
         <p className="subtitle--md">

@@ -12,3 +12,22 @@
 .contact .cards .card .base-link {
   font-size: 13px;
 }
+
+.contact .cards .card .icons-wrapper {
+  color: #1e1e1e;
+  /* font-size: 25px; */
+}
+
+.contact .cards .card .icons-wrapper svg {
+  background-color: #939598;
+  padding: 5px;
+  margin: 5px;
+  /* size: 50px; */
+  border-radius: 50%;
+}
+
+.contact .cards .card .icons-wrapper svg:hover {
+  cursor: pointer;
+  background-color: #cbcbcb;
+  transition: all 0.5s;
+}
