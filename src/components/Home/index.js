@@ -5,9 +5,9 @@ import Contact from "../Contact";
 function Home() {
   return (
     <div className="home">
-      <WhatWeDo />
-      <PlanNews />
-      <Contact />
+      <WhatWeDo id="o-que-fazemos" />
+      <PlanNews id="plan-news" />
+      <Contact id="contact" />
     </div>
   );
 }
