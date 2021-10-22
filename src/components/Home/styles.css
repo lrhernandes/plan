@@ -2,17 +2,15 @@
   max-height: 100vh;
   overflow-y: scroll;
   width: 100%;
-  padding: 30px;
+  padding: 3%;
 }
 
 .home .section {
   height: 100%;
-  padding-top: 8%;
-  box-sizing: border-box;
 }
 
-.home .section + .section {
-  margin-top: 4%;
+.section + .section {
+  padding-top: 19vh;
 }
 
 svg.arrow-bottom--md {

@@ -1,5 +1,7 @@
 import "./styles.css";
 import Cards from "./Cards";
+import { IoArrowDown } from "react-icons/io5";
+import notARobot from "../../assets/notarobot.png";
 function Contact() {
   return (
     <div className="contact section">
@@ -46,6 +48,10 @@ function Contact() {
             </div>
           </label>
         </form>
+        <img className="recaptcha" src={notARobot} alt="" />
+        <a className="base-link" href>
+          ENVIAR <IoArrowDown className="arrow-bottom--sm" />
+        </a>
       </div>
       <div className="contact__cards">
         <Cards />

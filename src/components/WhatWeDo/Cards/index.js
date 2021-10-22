@@ -1,6 +1,6 @@
 import "./styles.css";
 import { IoGameControllerOutline, IoArrowDown } from "react-icons/io5";
-import Card from "../Card";
+// import Card from "../Card";
 import img1 from "../../../assets/img1.png";
 import img2 from "../../../assets/img2.png";
 import img3 from "../../../assets/img3.png";
@@ -36,7 +36,7 @@ function Cards() {
   return (
     <div className="cards">
       {cards.map((card, index) => (
-        <Card key={index}>
+        <div className="card" key={index}>
           <div
             className="card__image"
             style={{ backgroundImage: `url(${card.img})` }}
@@ -52,7 +52,7 @@ function Cards() {
               {card.textLink} <IoArrowDown className="arrow-bottom--sm" />
             </a>
           )}
-        </Card>
+        </div>
       ))}
     </div>
   );

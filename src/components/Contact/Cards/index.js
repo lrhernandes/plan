@@ -1,16 +1,19 @@
 import "./styles.css";
 import { IoArrowDown, IoLocationSharp } from "react-icons/io5";
+import planMarcketing from "../../../assets/plan.png";
+import planLogo from "../../../assets/logo.png";
+import fullUp from "../../../assets/fullup.png";
 function Cards() {
   return (
     <div className="cards">
-      <div>
+      <div className="card">
         <p className="subtitle--md">Siga-nos</p>
         <p className="text-base">
           Fique sempre por dentro de todas as novidades da Plan XP e de todas
           empresas do Grupo Plan Marketing.
         </p>
       </div>
-      <div>
+      <div className="card">
         <p className="subtitle--md">
           <IoLocationSharp />
           /RS
@@ -27,7 +30,7 @@ function Cards() {
           VER NO GOOGLE MAPS <IoArrowDown className="arrow-bottom--sm" />
         </a>
       </div>
-      <div>
+      <div className="card">
         <p className="subtitle--md">
           <IoLocationSharp />
           /SP
@@ -43,6 +46,35 @@ function Cards() {
         </p>
         <a className="base-link" href>
           VER NO GOOGLE MAPS <IoArrowDown className="arrow-bottom--sm" />
+        </a>
+      </div>
+      <div className="card">
+        <img src={planMarcketing} alt="Logo da Plan Marketing" />
+        <p className="text-base">
+          A Plan faz parte do Grupo Plan Marketing, um grupo de comunicação
+          completo.
+        </p>
+        <a className="base-link" href>
+          CONHEÇA <IoArrowDown className="arrow-bottom--sm" />
+        </a>
+      </div>
+      <div className="card">
+        <img src={planLogo} alt="Logo da Plan" />
+        <p className="text-base">
+          A Plan XP é especializada em realidade virtual, realidade aumentada e
+          jogos.
+        </p>
+        <a className="base-link" href>
+          CONHEÇA <IoArrowDown className="arrow-bottom--sm" />
+        </a>
+      </div>
+      <div className="card">
+        <img src={fullUp} alt="Logo da FullUp" />
+        <p className="text-base">
+          A FullUp é uma agência especializada em branding, design e campanhas.
+        </p>
+        <a className="base-link" href>
+          CONHEÇA <IoArrowDown className="arrow-bottom--sm" />
         </a>
       </div>
     </div>

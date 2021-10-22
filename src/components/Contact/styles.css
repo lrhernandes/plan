@@ -1,7 +1,12 @@
 .contact {
   display: flex;
   flex-direction: row;
-  gap: 30px;
+  gap: 8%;
+}
+
+.contact__form {
+  display: flex;
+  flex-direction: column;
 }
 
 .contact__form input,
@@ -24,15 +29,28 @@
 
 .contact__form textarea {
   resize: vertical;
+  height: 80px;
   width: calc(100% - 10px);
 }
 .contact__form label {
   width: 100%;
+  font-size: 13px;
+}
+.contact__form form {
+  margin: 10px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact__form .base-link {
+  margin-top: 10px;
 }
 
 .input--wrapper {
   position: relative;
   width: 100%;
+  display: flex;
   margin: 5px 0px;
   color: rgb(62, 62, 62);
   border: 1px solid rgba(70, 70, 70);
@@ -52,4 +70,8 @@
   -moz-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   -o-transform: rotate(45deg);
+}
+
+.recaptcha {
+  width: 200px;
 }

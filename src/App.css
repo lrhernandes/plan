@@ -31,6 +31,16 @@ body {
   background: rgb(103, 103, 103);
 }
 
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 50px #1e1e1e inset; /* Change the color to your own background color */
+  -webkit-text-fill-color: white;
+}
+
+input:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0 50px #1e1e1e inset; /*your box-shadow*/
+  -webkit-text-fill-color: white;
+}
+
 .text-base {
   font-size: 13px;
   line-height: 22px;

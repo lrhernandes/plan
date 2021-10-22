@@ -1,4 +1,14 @@
 .contact .cards {
   display: grid;
+  gap: 20px;
   grid-template-columns: repeat(3, auto);
+}
+
+.contact .cards .card img {
+  width: 50%;
+  max-width: 130px;
+}
+
+.contact .cards .card .base-link {
+  font-size: 13px;
 }
