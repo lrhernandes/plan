@@ -1,6 +1,9 @@
-# Getting Started with Create React App
+# Habitue Countries
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Preview na vercel [https://plan.vercel.app/](https://plan.vercel.app/)
+
+![image](https://github.com/user-attachments/assets/685db639-a969-4d45-b8c2-0b76aa6c4ac6)
+
 
 ## Available Scripts
 
